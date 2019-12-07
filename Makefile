@@ -17,3 +17,6 @@ build:
 
 docker-example:
 	docker run -it --rm --cap-add=SYS_ADMIN lighthouse_ci https://example.com --quiet > outputs/report.html
+
+shell:
+	docker run -it --rm --cap-add=SYS_ADMIN --entrypoint sh lighthouse_ci -c bash
