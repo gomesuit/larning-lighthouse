@@ -1,0 +1,23 @@
+{
+  "name": "larning-lighthouse",
+  "version": "1.0.0",
+  "description": "https://github.com/GoogleChrome/lighthouse",
+  "main": "index.js",
+  "dependencies": {
+    "lighthouse": "^5.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "lighthouse": "node ./node_modules/lighthouse/lighthouse-cli/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gomesuit/larning-lighthouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gomesuit/larning-lighthouse/issues"
+  },
+  "homepage": "https://github.com/gomesuit/larning-lighthouse#readme"
+}
