@@ -9,7 +9,11 @@ example:
 		--output json --output html \
 		--output-path ./outputs/report
 
+# https://github.com/GoogleChromeLabs/lighthousebot/tree/master/builder
 build:
 	git clone --depth 1 https://github.com/GoogleChromeLabs/lighthousebot.git docker-images
 	cd docker-images/builder && \
 	yarn build
+
+docker-example:
+	docker run -it --rm --cap-add=SYS_ADMIN lighthouse_ci https://example.com --quiet > outputs/report.html
