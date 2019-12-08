@@ -9,6 +9,12 @@ example:
 		--output json --output html \
 		--output-path ./outputs/result
 
+desktop:
+	npx lighthouse https://example.com/ \
+		--output json --output html \
+		--output-path ./outputs/result \
+		--config-path ./custom-config.js
+
 # https://github.com/GoogleChromeLabs/lighthousebot/tree/master/builder
 build:
 	git clone --depth 1 https://github.com/GoogleChromeLabs/lighthousebot.git docker-images
