@@ -7,7 +7,7 @@ help:
 example:
 	npx lighthouse https://example.com/ \
 		--output json --output html \
-		--output-path ./outputs/report
+		--output-path ./outputs/result
 
 # https://github.com/GoogleChromeLabs/lighthousebot/tree/master/builder
 build:
